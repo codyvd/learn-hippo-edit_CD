@@ -4,6 +4,8 @@
 #SBATCH --mem-per-cpu 4G
 
 #SBATCH --job-name=lcarnn
+#SBATCH --mail-type=begin        # send email when job begins
+#SBATCH --mail-type=end          # send email when job ends
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-user=codydong@princeton.edu
 #SBATCH --output slurm_log/lcarnn-%j.log
