@@ -10,6 +10,10 @@
 #SBATCH --mail-user=codydong@princeton.edu
 #SBATCH --output slurm_log/lcarnn-%j.log
 
+module purge
+module load anaconda3/2021.11
+conda activate pytorch_q
+
 DATADIR=/scratch/gpfs/cd6060/logs/learn-hippocampus-test/log
 
 echo $(date)
